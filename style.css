@@ -1,6 +1,7 @@
 body {
   margin: 0;
   text-align: center;
+  font-family: sans-serif;
 }
 
 section {
@@ -22,29 +23,35 @@ section {
 
   display: flex;
   justify-content: space-around;
-  align-content: center;
 
   height: 8vh;
-  background-color: #555555;
+  background-color: #111111;
   color: white;
 }
 
-#menu > * {
+#menu > a {
   align-self: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#menu > a:last-child {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 12px;
 }
 
 #mission {
-  background-color: #CCCCCC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 25px;
-
   text-transform: uppercase;
 }
 
 #services {
-
+  background-color: #555555;
 }
 
 .service {
