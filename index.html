@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>0/1 | Hub Numérique Estrie</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <section id="splash" style="padding: 0;"></section>
+  <header id="menu">
+    <a id="lien_mission" href="#mission">Mission</a>
+    <a id="lien_liaisons_numeriques" href="#liaisons-numeriques">Liaisons Numériques</a>
+    <a id="lien_services" href="#services">Services</a>
+    <a id="lien_partenaires" href="#partenaires">Partenaires</a>
+    <a>contactez-nous</a>
+  </header>
+  <section id="mission">
+    <h2> Expertise technologique accessible pour vos projets et vos projets ambitieux </h2>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <article id="organisation" class="service">
+      <div class="image-service">
+        <img src="question.jpg" />
+      </div>
+      <div class="text-service">
+        org.
+      </div>
+    </article>
+    <article id="communication" class="service">
+      <div class="image-service" style="float: right;">
+        <img src="question.jpg" />
+      </div>
+      <div class="text-service" style="float: left;">
+        comm.
+      </div>
+    </article>
+    <article id="creation" class="service">
+      <div class="image-service">
+        <img src="question.jpg" />
+      </div>
+      <div class="text-service">
+        <p>
+          Studio
+        </p>
+      </div>
+    </article>
+  </section>
+  <section id="liaisons-numeriques">
+    <h2>Liaisons Numériques</h2>
+    <p>
+      Savoir | Rencontres | Mentorat
+    </p>
+    <a href="ln.hub01.org">En savoir plus</a>
+  </section>
+  <section id="partenaires">
+    <h2>Partenaires</h2>
+    <div id="logos_partenaires">
+      <img src="logo_cate.png" />
+      <img src="logo_cce.jpg" />
+      <img src="logo_entreprendre_memphremagog.png" />
+      <img src="logo_fabrique.png" />
+      <img src="logo_ptitbonheur.png" />
+      <img src="logo_sporobole.png" />
+      CAC
+    </div>
+  </section>
+  <footer>
+    <p>
+      0/1 | Hub Numérique Estrie
+    </p>
+    <p>
+      <a href="mailto:info@hub01.org">info@hub01.org</a>
+    </p>
+    <a href="https://www.facebook.com/HubNumeriqueEstrie01/"><img src="icone_fb.png" /></a>
+  </footer>
+  <script>
+  let delais_scroll = 500;
+  $("a[id='lien_mission']").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#mission").offset().top
+    }, delais_scroll);
+  });
+  $("a[id='lien_liaisons_numeriques']").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#liaisons-numeriques").offset().top
+    }, delais_scroll);
+  });
+  $("a[id='lien_partenaires']").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#partenaires").offset().top
+    }, delais_scroll);
+  });
+  $("a[id='lien_services']").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#services").offset().top
+    }, delais_scroll);
+  });
+  </script>
+</body>
+</html>

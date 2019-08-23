@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  padding: 5% 10%;
+}
+
+#splash {
+  width: 100%;
+  height: 100vh;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+#menu {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  height: 8vh;
+  background-color: #555555;
+  color: white;
+}
+
+#menu > * {
+  align-self: center;
+}
+
+#mission {
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+
+  text-transform: uppercase;
+}
+
+#services {
+
+}
+
+.service {
+  clear: both;
+  height: 250px;
+}
+
+.image-service {
+  float: left;
+  width: 40%;
+  height: inherit;
+}
+
+.image-service img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-service {
+  float: right;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.text-service * {
+  align-self: center;
+}
+
+#liaisons-numeriques {
+  background-color: #CCCCCC;
+  color: white;
+}
+
+#logos_partenaires {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+
+#logos_partenaires * {
+  width: 125px;
+}
+
+footer {
+  padding: 5% 10%;
+  text-align: left;
+  background-color: #444444;
+}
+
+footer img {
+  width: 75px;
+}
