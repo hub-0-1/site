@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <title>0/1 | Hub Numérique Estrie</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_m.css" />
+  <link rel="stylesheet" href="style_d.css" />
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,34 +18,50 @@
     <a href="mailto:info@hub01.org">contactez-nous</a>
   </header>
   <section id="mission">
-    <h2>Expertise technologique accessible pour vos projets et vos projets ambitieux</h2>
+    <h4>Nous pensons que tous devraient avoir accès aux bénéfices des nouvelles technologies.
+    <br />Nous vous aiderons, dans un langage compréhensible, à mettre en place les solutions les plus adaptées à votre réalité.</h4>
+    <p> organisation | communication | création</p>
+    <p> Accompagnement personnalisé pour vos projets numériques. </p>
   </section>
   <section id="services">
     <h2>Services</h2>
     <article id="organisation" class="service">
-      <div class="image-service">
-        <img src="question.jpg" />
+      <div class="image-service image_organisation">
       </div>
       <div class="text-service">
-        org.
+        <h3>Organisation</h3>
+        <p>
+          Les nouvelles technologies se sont infiltrées partout dans nos méthodes de travail. D’un côté, nos collaborateurs partagent des documents à partir Google Drive ou Office365 et utilisent des applications de plus en plus spécialisées pour leur gestion interne. De l’autre, les vieux serveurs locaux font parfois défaillance, sont sujets aux cyberattaques et sont couteux en termes d’entretien. Il est difficile de s’y retrouver dans la multitude d’options qui existent en ligne et c’est pour cela que 0/1 offre un accompagnement personnalisé aux organisations qui veulent surfer la vague.
+        </p>
       </div>
     </article>
     <article id="communication" class="service">
-      <div class="image-service" style="float: right;">
-        <img src="question.jpg" />
-      </div>
-      <div class="text-service" style="float: left;">
-        comm.
+      <div class="image-service image_communication" style="float: right;"> </div>
+      <div class="text-service" style="float: left; text-align: left;">
+        <h3>Communication</h3>
+        <p>
+          La communication est un enjeux majeur de l'ère du numérique. Le site web est indispensable, mais si les enjeux de découvrabilité sont ignorés, il sera inutile. Les réseaux sociaux sont multiples et les stratégies pour les animer sont démultipliées.
+        </p>
       </div>
     </article>
     <article id="creation" class="service">
-      <div class="image-service">
-        <img src="question.jpg" />
-      </div>
+      <div class="image-service image_creation"> </div>
       <div class="text-service">
+        <h3>Studio</h3>
         <p>
-          Studio
+          Ensemble, nos experts et nos partenaires cumullent des connaissances en :
         </p>
+        <ul>
+          <li> Réalité augmentée et virtuelle</li>
+          <li>Vision par ordinateur</li>
+          <li>Réalisation de matériel audiovisuel</li>
+          <li>Modélisation</li>
+          <li>Animation 2D / 3D</li>
+          <li>Applications web et mobile</li>
+          <li>Projection mapping</li>
+          <li>Lasers, boucane et petits moteurs</li>
+          <li>Pour le reste, nous sommes débrouillards et nous avons des contacts</li>
+        </ul>
       </div>
     </article>
   </section>
@@ -53,7 +70,7 @@
     <p>
       Savoir | Rencontres | Mentorat
     </p>
-    <a href="ln.hub01.org">En savoir plus</a>
+    <a href="https://www.eventbrite.ca/e/billets-liaisons-numeriques-lintroduction-64984563579">En savoir plus</a>
   </section>
   <section id="partenaires">
     <h2>Partenaires</h2>
@@ -77,7 +94,7 @@
     <a href="https://www.facebook.com/HubNumeriqueEstrie01/"><img src="icone_fb.png" /></a>
   </footer>
   <script>
-  let delais_scroll = 500;
+  let delais_scroll = 750;
   $("a[id='lien_mission']").click(function() {
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#mission").offset().top
