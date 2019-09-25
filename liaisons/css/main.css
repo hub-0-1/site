@@ -50,54 +50,30 @@ hr {
   float: right;
 }
 
+.header {
+  padding: 20% 10%;
+}
+
 .header .liaisons-logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.header .keywords {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 3em;
-  overflow: hidden;
-  letter-spacing: .35em;
-  border-right: .15em solid darkgrey;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  -webkit-animation: typing 3.5s steps(19, end), blink-caret 1s step-end infinite;
-          animation: typing 3.5s steps(19, end), blink-caret 1s step-end infinite;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 25px 0 0 0;
 }
 
-/* The typing effect */
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+.mission {
+  color: #f2f2f2;
+  background-color: #acacac;
+  padding: 100px 10%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */

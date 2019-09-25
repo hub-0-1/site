@@ -18,7 +18,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid rgb(124, 124, 124);
-    margin: 1em 10%; //80$ width
+    margin: 1em 10%; //80% width
     padding: 0;
 }
 
@@ -54,28 +54,27 @@ hr {
 }
 
 .header {
+    padding: 20% 10%;
     .liaisons-logo {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .keywords {
         font-family: 'Ubuntu Mono', monospace;
-        font-size: 3em;
-        overflow: hidden;
-        letter-spacing: .35em;
-        border-right: .15em solid darkgrey; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        animation: 
-            typing 3.5s steps(19, end),
-            blink-caret 1s step-end infinite;
+        color: $text-color;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 25px 0 0 0;
     }
 }
 
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-  }
+.mission {
+    color: $bg-color;
+    background-color: #acacac;
+    padding: 100px 10%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
