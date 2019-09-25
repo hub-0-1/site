@@ -13,6 +13,15 @@ a {
     text-decoration: none;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(124, 124, 124);
+    margin: 1em 10%; //80$ width
+    padding: 0;
+}
+
 .navigation {
     position: fixed;
     width: 100%;
@@ -43,3 +52,30 @@ a {
         float: right;
     }
 }
+
+.header {
+    .liaisons-logo {
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 3em;
+        overflow: hidden;
+        letter-spacing: .35em;
+        border-right: .15em solid darkgrey; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        animation: 
+            typing 3.5s steps(19, end),
+            blink-caret .5s step-end infinite;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
