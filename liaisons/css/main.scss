@@ -9,6 +9,19 @@ body {
     background-color: $bg-color;
 }
 
+h1, h2, h3 {
+    font-family: 'Ubuntu Mono', monospace;
+    letter-spacing: 0.085em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
 a {
     text-decoration: none;
 }
