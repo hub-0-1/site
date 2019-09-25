@@ -64,7 +64,7 @@ hr {
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         animation: 
             typing 3.5s steps(19, end),
-            blink-caret .5s step-end infinite;
+            blink-caret 1s step-end infinite;
     }
 }
 
