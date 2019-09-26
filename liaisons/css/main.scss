@@ -1,147 +1,166 @@
 $bg-color: #f2f2f2;
 $text-color: black;
 $link-hover-color: #6e6e6e;
-$break-small: 320px;
-$break-large: 1200px; 
 
 @mixin breakpoint($point) {
-    @if $point == mobile {
-      @media (min-width: 320px) { @content; }
+  @if $point == mobile {
+    @media (min-width: 320px) {
+      @content;
     }
-    @else if $point == tablet {
-      @media (min-width: 768px) { @content; }
+  } @else if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
     }
-    @else if $point == desktop {
-      @media (min-width: 1200px)  { @content; }
+  } @else if $point == desktop {
+    @media (min-width: 1200px) {
+      @content;
     }
   }
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    color: $text-color;
-    background-color: $bg-color;
 }
 
-h1, h2, h3 {
-    font-family: 'Ubuntu Mono', monospace;
-    letter-spacing: 0.085em;
-    text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu Mono", monospace;
+  letter-spacing: 0.085em;
+  text-align: center;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h2 {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .page-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
-    padding: 25px 75px;
+  padding: 25px 75px;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(124, 124, 124);
-    margin: 1em 10%; //80% width
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(124, 124, 124);
+  margin: 1em 10%; //80% width
+  padding: 0;
 }
 
 .navigation {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: $bg-color;
-    z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $bg-color;
+  z-index: 10;
+  height: 55px;
 
-    a {
-        font-family: 'Ubuntu Mono', monospace;
-        color: $text-color;
-        float: left;
-        text-align: center;
-        padding: 1em;
-        font-size: 1.2em;
-        line-height: 45px;
-        transition: .35s all ease;
-
-        &:hover {
-            color: $link-hover-color;
-        }
+  .nav-hub-logo {
+    width: 40px;
+    padding: 10px 0;
+    margin: 0 auto;
+    img {
+      width: 100%;
     }
 
-    .nav-hub-logo {
-        height: 45px;
+    @include breakpoint(tablet) {
+      margin: 0;
+      height: 45px;
+      padding: 10px .5em;
     }
+  }
 
-    .navigation-links {
-        float: right;
+  .navigation-links {
+    display: none;
+
+    @include breakpoint(tablet) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 1em;
+      font-family: "Ubuntu Mono", monospace;
+      font-size: 1.2em;
+      letter-spacing: 0.085em;
+      transition: .35s all ease;
+
+      a {
+          color: $text-color;
+          padding: 0 .5em;
+          &:hover {
+              color: $link-hover-color;
+          }
+      }
     }
+  }
 }
 
 .header {
-    padding: 20% 10%;
-    .liaisons-logo {
-        display: block;
-        margin: auto;
-        width: 100%;
-    }
+  padding: 20% 10%;
+  .liaisons-logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
 
-    .keywords {
-        font-family: 'Ubuntu Mono', monospace;
-        color: $text-color;
-        font-size: 1.2em;
-        text-align: center;
-        padding: 25px 0 0 0;
-    }
+  .keywords {
+    font-family: "Ubuntu Mono", monospace;
+    color: $text-color;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px 0 0 0;
+  }
 }
 
 .mission {
-    color: $bg-color;
-    background-color: #acacac;
-    padding: 100px 10%;
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.5em;
+  color: $bg-color;
+  background-color: #acacac;
+  padding: 100px 10%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 .conferences {
+  .upcoming-conference {
+    position: relative;
 
-    .upcoming-conference {
-        position: relative;
-
-        .upcoming-conference-teaser {
-            width: 100%;
-            height: 100%;
-        }
-
-        .upcoming-conference-desc {
-            @include breakpoint(tablet) {
-                width: 92%;
-                height: 80%;
-                background-color: rgba(0, 0, 0, 0.322);
-                color: $bg-color;
-                opacity: .75;
-                position: absolute;
-                bottom: 4%;
-                padding: 4%;
-            }
-        }
+    .upcoming-conference-teaser {
+      width: 100%;
+      height: 100%;
     }
+
+    .upcoming-conference-desc {
+      @include breakpoint(tablet) {
+        width: 92%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.322);
+        color: $bg-color;
+        opacity: 0.75;
+        position: absolute;
+        bottom: 4%;
+        padding: 4%;
+      }
+    }
+  }
 }
