@@ -163,7 +163,8 @@ hr {
 
 .conferences .upcoming-conference .upcoming-conference-desc {
   background-color: #acacac;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 450px;
 }
 
 .conferences .upcoming-conference .upcoming-conference-desc p {
@@ -186,9 +187,28 @@ hr {
 
 .conferences .upcoming-conference .btn-signup:hover {
   background-color: #9c9b9b;
+  cursor: pointer;
 }
 
 .conferences .upcoming-conference .btn-signup:active {
   background-color: #3d3d3d;
+}
+
+#mentorat {
+  position: relative;
+}
+
+#mentorat img {
+  width: 100%;
+  height: auto;
+}
+
+#mentorat .img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */

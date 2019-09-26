@@ -175,7 +175,8 @@ hr {
 
     .upcoming-conference-desc {
         background-color: #acacac;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 450px;
 
         p {
             padding: 1em 2em;
@@ -209,6 +210,7 @@ hr {
 
         &:hover {
             background-color: #9c9b9b;
+            cursor: pointer;
         }
 
         &:active {
@@ -216,4 +218,21 @@ hr {
         }
     }
   }
+}
+
+#mentorat {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
 }
