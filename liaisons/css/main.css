@@ -35,7 +35,13 @@ p {
 }
 
 section {
-  padding: 25px 75px;
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 25px 75px;
+  }
 }
 
 hr {
@@ -138,17 +144,33 @@ hr {
   background-size: contain;
   width: 100%;
   height: 100px;
+  margin: 0;
 }
 
 .conferences .upcoming-conference .upcoming-conference-teaser h3 {
   color: #f2f2f2;
   line-height: 100px;
   vertical-align: middle;
+  font-size: .9em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .conferences .upcoming-conference .upcoming-conference-teaser h3 {
+    font-size: 1em;
+  }
+}
+
+.conferences .upcoming-conference .upcoming-conference-desc {
+  background-color: #acacac;
+  margin: 0;
 }
 
 .conferences .upcoming-conference .upcoming-conference-desc p {
   padding: 1em 2em;
   font-size: .9em;
+  color: #f2f2f2;
+  margin: 0 0 10px 0;
 }
 
 .conferences .upcoming-conference .btn-signup {

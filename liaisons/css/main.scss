@@ -57,7 +57,11 @@ p {
 }
 
 section {
-  padding: 25px 75px;
+  padding: 25px;
+
+  @include breakpoint(tablet) {
+      padding: 25px 75px;
+  }
 }
 
 hr {
@@ -154,19 +158,30 @@ hr {
         background-size: contain;
         width: 100%;
         height: 100px;
+        margin: 0;
 
         h3 {
             color: $bg-color;
             line-height: 100px;
             vertical-align: middle;
+            font-size: .9em;
+            margin: 0;
+
+            @include breakpoint(tablet) {
+                font-size: 1em;
+            }
         }
     }
 
     .upcoming-conference-desc {
+        background-color: #acacac;
+        margin: 0;
 
         p {
             padding: 1em 2em;
             font-size: .9em;
+            color: $bg-color;
+            margin: 0 0 10px 0;
         }
 
 
