@@ -47,25 +47,6 @@ hr {
   padding: 0;
 }
 
-.btn-container {
-  background-color: #acacac;
-  padding: 12px;
-  border-radius: 12px;
-  font-family: "Ubuntu Mono", monospace;
-  text-transform: uppercase;
-  color: black;
-  -webkit-transition: .35s ease all;
-  transition: .35s ease all;
-}
-
-.btn-container p {
-  text-align: center;
-}
-
-.btn-container:hover {
-  background-color: #cecece;
-}
-
 .navigation {
   position: fixed;
   width: 100%;
@@ -168,5 +149,24 @@ hr {
 .conferences .upcoming-conference .upcoming-conference-desc p {
   padding: 1em 2em;
   font-size: .9em;
+}
+
+.conferences .upcoming-conference .btn-signup {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.1em;
+  background-color: #6e6e6e;
+  border: none;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  letter-spacing: 0.085em;
+}
+
+.conferences .upcoming-conference .btn-signup:hover {
+  background-color: #9c9b9b;
+}
+
+.conferences .upcoming-conference .btn-signup:active {
+  background-color: #3d3d3d;
 }
 /*# sourceMappingURL=main.css.map */
