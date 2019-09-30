@@ -238,6 +238,10 @@ button {
     .img-overlay {
         color: $bg-color;
         padding: 1em 2em;
+
+        p {
+          text-align: center;
+        }
     }
 
     .mentorat-info-container {
@@ -254,6 +258,7 @@ button {
         // border: 1px solid black;
         padding: 1em 2em;
         flex: 1 1 0px;
+        font-size: 0.9em;
     }
 
     .mentorat-line-overlay {
@@ -263,8 +268,8 @@ button {
         display: block;
         position: absolute;
         border: 1.5px solid white;
-        width: 10%;
-        left: 45%;
+        width: 15%;
+        left: 42.5%;
         top: 55px;
         mix-blend-mode: difference;
       }

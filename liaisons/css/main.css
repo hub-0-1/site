@@ -223,6 +223,10 @@ button:active {
   padding: 1em 2em;
 }
 
+#mentorat .img-overlay p {
+  text-align: center;
+}
+
 #mentorat .mentorat-info-container {
   position: relative;
   display: -webkit-box;
@@ -248,6 +252,7 @@ button:active {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
+  font-size: 0.9em;
 }
 
 #mentorat .mentorat-line-overlay {
@@ -259,8 +264,8 @@ button:active {
     display: block;
     position: absolute;
     border: 1.5px solid white;
-    width: 10%;
-    left: 45%;
+    width: 15%;
+    left: 42.5%;
     top: 55px;
     mix-blend-mode: difference;
   }
