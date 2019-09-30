@@ -20,6 +20,8 @@ $title-letter-spacing: 0.085em;
   }
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Ubuntu+Mono&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -71,6 +73,11 @@ hr {
   border-top: 1px solid rgb(124, 124, 124);
   margin: 1em 10%; //80% width
   padding: 0;
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
 }
 
 .navigation {
