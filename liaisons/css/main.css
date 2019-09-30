@@ -202,25 +202,41 @@ hr {
   background-color: #3d3d3d;
 }
 
-#mentorat {
-  position: relative;
-}
-
 #mentorat #helping-hand-img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../img/helping-hand-kids-landscape-crop-bw.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/helping-hand-kids-landscape-crop-bw.jpg);
-}
-
-#mentorat img {
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: auto;
 }
 
 #mentorat .img-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  padding: 1em 2em;
+}
+
+#mentorat .mentorat-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mentorat .mentorat-info {
+  padding: 1em 2em;
+}
+
+#mentorat #mentors {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+
+#mentorat #mentores {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #f2f2f2;
 }
 /*# sourceMappingURL=main.css.map */
