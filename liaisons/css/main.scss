@@ -80,6 +80,27 @@ em {
   font-weight: 600;
 }
 
+button {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.1em;
+  background-color: #6e6e6e;
+  border: none;
+  color: $bg-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+  letter-spacing: $title-letter-spacing;
+
+  &:hover {
+      background-color: #9c9b9b;
+      cursor: pointer;
+  }
+
+  &:active {
+      background-color: #3d3d3d;
+  }
+}
+
 .navigation {
   position: fixed;
   width: 100%;
@@ -199,38 +220,6 @@ em {
             color: $bg-color;
             margin: 0 0 10px 0;
         }
-
-
-    //   @include breakpoint(tablet) {
-    //     width: 92%;
-    //     height: 80%;
-    //     background-color: rgba(0, 0, 0, 0.322);
-    //     color: $bg-color;
-    //     opacity: 0.75;
-    //     position: absolute;
-    //     bottom: 4%;
-    //     padding: 4%;
-    //   }
-    }
-
-    .btn-signup {
-        font-family: "Ubuntu Mono", monospace;
-        font-size: 1.1em;
-        background-color: #6e6e6e;
-        border: none;
-        color: $bg-color;
-        border-radius: 10px;
-        padding: 10px;
-        letter-spacing: $title-letter-spacing;
-
-        &:hover {
-            background-color: #9c9b9b;
-            cursor: pointer;
-        }
-
-        &:active {
-            background-color: #3d3d3d;
-        }
     }
   }
 }
@@ -252,13 +241,33 @@ em {
     }
 
     .mentorat-info-container {
+        position: relative;
         display: flex;
         flex-direction: column;
+
+        @include breakpoint(tablet) {
+          flex-direction: row;
+        }
     }
 
     .mentorat-info {
         // border: 1px solid black;
         padding: 1em 2em;
+        flex: 1 1 0px;
+    }
+
+    .mentorat-line-overlay {
+      display: none;
+
+      @include breakpoint(tablet) {
+        display: block;
+        position: absolute;
+        border: 1.5px solid white;
+        width: 10%;
+        left: 45%;
+        top: 55px;
+        mix-blend-mode: difference;
+      }
     }
 
 
@@ -268,7 +277,7 @@ em {
     }
 
     #mentores {
-        background-color: rgba(0,0,0,.3);
+        background-color: rgba(0,0,0,.7);
         color: $bg-color;
     }
 }

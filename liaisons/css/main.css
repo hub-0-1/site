@@ -59,6 +59,27 @@ em {
   font-weight: 600;
 }
 
+button {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.1em;
+  background-color: #6e6e6e;
+  border: none;
+  color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+  letter-spacing: 0.085em;
+}
+
+button:hover {
+  background-color: #9c9b9b;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #3d3d3d;
+}
+
 .navigation {
   position: fixed;
   width: 100%;
@@ -188,26 +209,6 @@ em {
   margin: 0 0 10px 0;
 }
 
-.conferences .upcoming-conference .btn-signup {
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 1.1em;
-  background-color: #6e6e6e;
-  border: none;
-  color: #f2f2f2;
-  border-radius: 10px;
-  padding: 10px;
-  letter-spacing: 0.085em;
-}
-
-.conferences .upcoming-conference .btn-signup:hover {
-  background-color: #9c9b9b;
-  cursor: pointer;
-}
-
-.conferences .upcoming-conference .btn-signup:active {
-  background-color: #3d3d3d;
-}
-
 #mentorat #helping-hand-img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../img/helping-hand-kids-landscape-crop-bw.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/helping-hand-kids-landscape-crop-bw.jpg);
@@ -223,6 +224,7 @@ em {
 }
 
 #mentorat .mentorat-info-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,8 +234,36 @@ em {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  #mentorat .mentorat-info-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 #mentorat .mentorat-info {
   padding: 1em 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+}
+
+#mentorat .mentorat-line-overlay {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #mentorat .mentorat-line-overlay {
+    display: block;
+    position: absolute;
+    border: 1.5px solid white;
+    width: 10%;
+    left: 45%;
+    top: 55px;
+    mix-blend-mode: difference;
+  }
 }
 
 #mentorat #mentors {
@@ -242,7 +272,7 @@ em {
 }
 
 #mentorat #mentores {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #f2f2f2;
 }
 /*# sourceMappingURL=main.css.map */
