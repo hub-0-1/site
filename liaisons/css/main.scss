@@ -327,3 +327,12 @@ footer {
     font-size: .6em;
   }
 }
+
+@keyframes anim-heartbeat {
+  to {color: $bg-color;}
+}
+
+.heartbeat {
+  color: rgb(207, 98, 98);
+  animation: anim-heartbeat .5s infinite alternate;
+}

@@ -332,4 +332,22 @@ footer .copyright {
   text-align: center;
   font-size: .6em;
 }
+
+@-webkit-keyframes anim-heartbeat {
+  to {
+    color: #f2f2f2;
+  }
+}
+
+@keyframes anim-heartbeat {
+  to {
+    color: #f2f2f2;
+  }
+}
+
+.heartbeat {
+  color: #cf6262;
+  -webkit-animation: anim-heartbeat .5s infinite alternate;
+          animation: anim-heartbeat .5s infinite alternate;
+}
 /*# sourceMappingURL=main.css.map */
