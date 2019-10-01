@@ -160,7 +160,7 @@ button:active {
 
 .mission {
   color: #f2f2f2;
-  background-color: #acacac;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 100px 10%;
   text-align: center;
   font-size: 1.2em;
