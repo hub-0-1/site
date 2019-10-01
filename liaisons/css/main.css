@@ -90,22 +90,29 @@ button:active {
   height: 55px;
 }
 
-.navigation .nav-hub-logo {
-  width: 40px;
-  padding: 10px 0;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .navigation {
+    height: 100px;
+  }
 }
 
-.navigation .nav-hub-logo img {
-  width: 100%;
+.navigation .nav-hub-logo {
+  width: 40px;
+  height: 40px;
+  padding: 7.5px 0;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .navigation .nav-hub-logo {
     margin: 0;
-    height: 45px;
-    padding: 10px .5em;
+    padding: 15px;
+    height: 70px;
   }
+}
+
+.navigation .nav-hub-logo img {
+  height: 100%;
 }
 
 .navigation .navigation-links {
