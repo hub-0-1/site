@@ -296,4 +296,34 @@ button {
 
 footer {
   background-color: black;
+  color: $bg-color;
+  padding: 25px;
+
+  .partenaires-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 25px;
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 150px;
+    }
+
+    .partenaire {
+      width: 200px;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  p {
+    font-size: .8em;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: .6em;
+  }
 }
