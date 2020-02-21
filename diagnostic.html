@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="diagnostic.css">
+    <title>Diagnostique de maturité numérique</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <img id="logo" src="logo.png">
+    <h1>Diagnostic de maturité numérique</h1>
+    <form>
+      <section>
+        <div class="nom-section">Présence numérique (excluant les RS)</div>
+        <div class="ligne">
+          <div class="theme">Site web</div>
+          <p>Le site web est la piece maitresse de presque toutes les stratégies de communication numériques. Comment se porte le votre?</p>
+          <div class="items">
+            <input type="radio" id="site-web-1" name="site-web" data-label="optino" value="1">
+            <label for="site-web-1">Pas de site</label>
+            <input type="radio" id="site-web-2" name="site-web" value="2">
+            <label for="site-web-2">Site désuet</label>
+            <input type="radio" id="site-web-3" name="site-web" value="3">
+            <label for="site-web-3">Site fonctionnel et adaptatif aux différentes tailles d'écrans, mais ne répond pas aux besoins des utilisateurs (internes ou externes)</label>
+            <input type="radio" id="site-web-4" name="site-web" value="4">
+            <label for="site-web-4">Site à jour, esthétique et fonctionnalités répondant aux besoins des utlisateurs qui ont été analysés</label>
+            <input type="radio" id="site-web-5" name="site-web" value="5">
+            <label for="site-web-5">Site en constante évolution en fonction des besoins des utilisateurs</label>
+          </div>
+        </div>
+        <div class="ligne">
+          <div class="theme">Decouvrabilité</div>
+          <p>Nous savons maintenant que votre site web est très beau. Est-ce que les gens le voient?</p>
+          <div class="items">
+            <input type="radio" id="decouvrabilite-1" name="decouvrabilite" value="1">
+            <label for="decouvrabilite-1">Pas de connaissances de la découvrabilité</label>
+            <input type="radio" id="decouvrabilite-2" name="decouvrabilite" value="2">
+            <label for="decouvrabilite-2">Création de contenu régulièrement (matériel utilisé afin de mettre en place la stratégie de référencement)</label>
+            <input type="radio" id="decouvrabilite-3" name="decouvrabilite" value="3">
+            <label for="decouvrabilite-3">Référencement - SEO de base</label>
+            <input type="radio" id="decouvrabilite-4" name="decouvrabilite" value="4">
+            <label for="decouvrabilite-4">Réflexion sur le SEO et achat de publicité</label>
+            <input type="radio" id="decouvrabilite-5" name="decouvrabilite" value="5">
+            <label for="decouvrabilite-5">Infolettre envoyée régulièrement et stratégie d'augmentation du membership. Analyse des données d'infolettre possible par l'outil utilisé</label>
+          </div>
+        </div>
+        <div class="ligne">
+          <div class="theme">Analytics</div>
+          <p>Vous avez payé Google pour de la publicité. Bien. Utilisez vous des analytics pour vous assurer que votre investissement donne des résultats?</p>
+          <div class="items">
+            <input type="radio" id="analytics-1" name="analytics" value="1">
+            <label for="analytics-1">Pas d'outils d'analytics installés sur le site</label>
+            <input type="radio" id="analytics-2" name="analytics" value="2">
+            <label for="analytics-2">Outils d'analytics de base installés sur le site. Peu ou pas d'utilisation</label>
+            <input type="radio" id="analytics-3" name="analytics" value="3">
+            <label for="analytics-3">Outils analytics multiples installés (ex: Google analytics + facebook pixel). Extraction des statistiques pour rapport</label>
+            <input type="radio" id="analytics-4" name="analytics" value="4">
+            <label for="analytics-4">Outils analytics multiples installés + analyse avancée du traffic et création de personas</label>
+            <input type="radio" id="analytics-5" name="analytics" value="5">
+            <label for="analytics-5">Adaptation des outils de communications en fonction des données recueillies sur les analytics</label>
+          </div>
+        </div>
+        <div class="ligne">
+          <div class="theme">Infolettre</div>
+          <p>Vous attirez les foules sur votre site. Elles veulent probablement se garder informées</p>
+          <div class="items">
+            <input type="radio" id="infolettre-1" name="infolettre" value="1">
+            <label for="infolettre-1">Pas d'infolettre</label>
+            <input type="radio" id="infolettre-2" name="infolettre" value="2">
+            <label for="infolettre-2">Infolettre envoyée selon un calendrier régulier</label>
+            <input type="radio" id="infolettre-3" name="infolettre" value="3">
+            <label for="infolettre-3">Infolettre envoyée régulièrement et stratégie d'augmentation du membership; analyse des données d'infolettre</label>
+            <input type="radio" id="infolettre-4" name="infolettre" value="4">
+            <label for="infolettre-4">Infolettre segmentée en fonction des listes d'abonnés avec une stratégie augmentation membership</label>
+            <input type="radio" id="infolettre-5" name="infolettre" value="5">
+            <label for="infolettre-5">Infolettre segmentée en fonction des listes d'abonnés avec une stratégie augmentation membership adaptée en fonction des données recueillies</label>
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>
