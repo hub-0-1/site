@@ -3,7 +3,7 @@
 }
 
 #container {
-  max-width: 520px;
+  width: 520px;
   margin: 10px auto;
 }
 
@@ -36,3 +36,11 @@ li::after {
 .nom {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 550px) {
+  #container {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+
