@@ -76,7 +76,7 @@ header nav .icone {
   background-color: #e2e3e5;
   margin: 25px;
   width: 90%;
-  padding: 60px 0;
+  padding: 75px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +112,32 @@ header nav .icone {
 
 #cliniques img {
   height: 75px;
+}
+
+#informations-generales {
+  margin: 75px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#informations-generales h3 {
+  font-size: 2rem;
+  text-transform: unset;
+}
+
+#informations-generales h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: unset;
+}
+
+#approche {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 75px 25%;
+}
+
+#approche h2 {
+  font-size: 2.5rem;
 }
 
 #logos-partenaires {
