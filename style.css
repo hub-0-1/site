@@ -9,7 +9,8 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Arial';
   text-transform: uppercase;
 }
 
@@ -119,14 +120,10 @@ header nav .icone {
   font-family: 'Open Sans', sans-serif;
 }
 
-#informations-generales h3 {
-  font-size: 2rem;
+#informations-generales * {
+  font-size: 1.8rem;
   text-transform: unset;
-}
-
-#informations-generales h2 {
-  font-family: 'Open Sans', sans-serif;
-  text-transform: unset;
+  font-weight: initial;
 }
 
 #approche {
