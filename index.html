@@ -1,120 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <title>0/1 | Hub Numérique Estrie</title>
-  <link rel="stylesheet" href="styles/style_m.css" />
-  <link rel="stylesheet" href="styles/style_d.css" />
-  <meta charset="utf-8" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
-  <section id="splash" style="padding: 0;"></section>
-  <!--<header id="menu">
-    <a id="lien_mission" href="#mission">Mission</a>
-    <a id="lien_services" href="#services">Services</a>
-    <a id="lien_liaisons_numeriques" href="#liaisons-numeriques">Liaisons Numériques</a>
-    <a id="lien_partenaires" href="#partenaires">Partenaires</a>
-    <a href="mailto:info@hub01.org">contactez-nous</a>
-  </header>
-  <section id="mission">
-    <h4>Nous pensons que tous devraient avoir accès aux bénéfices des nouvelles technologies.
-    <br />Nous vous aiderons, dans un langage compréhensible, à mettre en place les solutions les plus adaptées à votre réalité.</h4>
-    <p> organisation | communication | création</p>
-    <p> Accompagnement personnalisé pour vos projets numériques. </p>
-  </section>
-  <section id="services">
-    <h2>Services</h2>
-    <article id="organisation" class="service">
-      <div class="image-service image_organisation">
+  <head>
+    <title>0/1 | Hub Numérique Estrie</title>
+    <link rel="stylesheet" href="styles/style_m.css" />
+    <link rel="stylesheet" href="styles/style_d.css" />
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <video autoplay muted loop>
+        <source src="background.mp4" type="video/mp4">
+      </video>
+      <nav>
+        <img id="logo" class="icone" src="images/logo.png">
+        <img id="hamburger" class="icone" src="images/hamburger.png">
+      </nav>
+      <h2 id="slogan">Une interface simple à<br>vos projets numériques</h2>
+    </header>
+    <section id="cliniques">
+      <div class="contenu">
+        pad
       </div>
-      <div class="text-service">
-        <h3>Organisation</h3>
-        <p>
-          Les nouvelles technologies se sont infiltrées partout dans nos méthodes de travail. D’un côté, nos collaborateurs partagent des documents à partir Google Drive ou Office365 et utilisent des applications de plus en plus spécialisées pour leur gestion interne. De l’autre, les vieux serveurs locaux font parfois défaillance, sont sujets aux cyberattaques et sont couteux en termes d’entretien. Il est difficile de s’y retrouver dans la multitude d’options qui existent en ligne et c’est pour cela que 0/1 offre un accompagnement personnalisé aux organisations qui veulent surfer la vague.
-        </p>
-      </div>
-    </article>
-    <article id="communication" class="service">
-      <div class="image-service image_communication" style="float: right;"> </div>
-      <div class="text-service" style="float: left; text-align: left;">
-        <h3>Communication</h3>
-        <p>
-          La communication est un enjeux majeur de l'ère du numérique. Le site web est indispensable, mais si les enjeux de découvrabilité sont ignorés, il sera inutile. Les réseaux sociaux sont multiples et les stratégies pour les animer sont démultipliées.
-        </p>
-      </div>
-    </article>
-    <article id="creation" class="service">
-      <div class="image-service image_creation"> </div>
-      <div class="text-service">
-        <h3>Studio</h3>
-        <p>
-          Ensemble, nos experts et nos partenaires cumullent des connaissances en :
-        </p>
-        <ul>
-          <li> Réalité augmentée et virtuelle</li>
-          <li>Vision par ordinateur</li>
-          <li>Réalisation de matériel audiovisuel</li>
-          <li>Modélisation</li>
-          <li>Animation 2D / 3D</li>
-          <li>Applications web et mobile</li>
-          <li>Projection mapping</li>
-          <li>Lasers, boucane et petits moteurs</li>
-          <li>Pour le reste, nous sommes débrouillards et nous avons des contacts</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-  <section id="liaisons-numeriques">
-    <h2>Liaisons Numériques</h2>
-    <p>
-      Savoir | Rencontres | Mentorat
-    </p>
-    <a href="https://www.eventbrite.ca/e/billets-liaisons-numeriques-lintroduction-64984563579">En savoir plus</a>
-  </section>
-  <section id="partenaires">
-    <h2>Partenaires</h2>
-    <div id="logos_partenaires">
-      <img src="logo_cate.png" />
-      <img src="logo_cce.png" />
-      <img src="logo_entreprendre_memphremagog.png" />
-      <img src="logo_fabrique.png" />
-      <img src="logo_ptitbonheur.png" />
-      <img src="logo_sporobole.png" />
-      <img src="logo_cac.svg" />
-    </div>
-  </section>
-  <footer>
-    <p>
-      0/1 | Hub Numérique Estrie
-    </p>
-    <p>
-      <a href="mailto:info@hub01.org">info@hub01.org</a>
-    </p>
-    <a href="https://www.facebook.com/HubNumeriqueEstrie01/"><img src="icone_fb.png" /></a>
-  </footer>-->
-  <script>
-  let delais_scroll = 750;
-  $("a[id='lien_mission']").click(function() {
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $("#mission").offset().top
-    }, delais_scroll);
-  });
-  $("a[id='lien_liaisons_numeriques']").click(function() {
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $("#liaisons-numeriques").offset().top
-    }, delais_scroll);
-  });
-  $("a[id='lien_partenaires']").click(function() {
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $("#partenaires").offset().top
-    }, delais_scroll);
-  });
-  $("a[id='lien_services']").click(function() {
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $("#services").offset().top
-    }, delais_scroll);
-  });
-  </script>
-</body>
+    </section>
+  </body>
 </html>
