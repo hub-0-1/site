@@ -130,11 +130,23 @@ header nav .icone {
   background-color: black;
   color: white;
   text-align: left;
-  padding: 75px 25%;
+  padding: 75px 20%;
 }
 
 #approche h2 {
   font-size: 2.5rem;
+}
+
+.barre {
+  display: inline-block;
+  width: 20%;
+  height: 10px;
+  background-color: white;
+  margin-left: 15px;
+}
+
+#approche p {
+  width: 50%;
 }
 
 #logos-partenaires {
