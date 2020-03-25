@@ -172,8 +172,31 @@ header nav .icone {
 footer {
   background-color: black; 
   color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  text-align: left;
 }
 
+.element-footer {
+  width: 25%;
+}
+
+#menu-gauche {
+  display: flex;
+  justify-content: left;
+}
+
+#menu-footer, #info-contact {
+  width: 50%;
+}
+
+#copyright {
+  background-color: black;
+  padding: 5px 10%;
+  color: white;
+  text-align: left;
+}
 @media only screen and (min-width: 600px) {
 
 }
