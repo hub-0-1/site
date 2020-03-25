@@ -28,7 +28,7 @@ header {
 
 header nav {
   position: absolute;
-  width: 100%;
+  width: 96%;
   height: 20vh;
   display: flex;
   justify-content: space-between;
@@ -128,7 +128,7 @@ header nav .icone {
 #cliniques p {
   color: white;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: x-large;
   text-align: left;
 }
 
@@ -274,5 +274,19 @@ footer a {
     margin-top: 15px;
     border-top: 2px solid white;
     padding-top: 15px;
+  }
+
+  #projets .contenu {
+    margin: 0;
+    width: 100%;
+    padding: 1% 0;
+  }
+
+  .coin-droit, .coin-gauche {
+    display: none;
+  }
+
+  #cliniques {
+    width: 100%;
   }
 }
