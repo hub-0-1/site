@@ -125,6 +125,27 @@ footer a {
   text-align: left;
   margin: 0;
 }
-@media only screen and (min-width: 600px) {
+
+@media only screen and (max-width: 600px) {
+
+  #informations-generales p {
+    width: 100%;
+  }
+
+  .barre {
+    margin: 10px 0;
+    display: block;
+  }
+
+  #menu-gauche {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  #info-contact {
+    margin-top: 15px;
+    border-top: 2px solid white;
+    padding-top: 15px;
+  }
 
 }
