@@ -64,6 +64,19 @@ header nav .icone {
   margin-left: 15px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li:before {
+  content: '- ';
+}
+
+em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
 footer {
   background-color: black; 
   color: white;
