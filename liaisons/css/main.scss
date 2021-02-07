@@ -1,0 +1,338 @@
+$bg-color: #f2f2f2;
+$bg-navigation-color: #f2f2f2cc;
+$text-color: black;
+$link-hover-color: #6e6e6e;
+$title-letter-spacing: 0.085em;
+
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media (min-width: 320px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Ubuntu+Mono&display=swap');
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu Mono", monospace;
+  letter-spacing: $title-letter-spacing;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 25px;
+
+  @include breakpoint(tablet) {
+      padding: 25px 75px;
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(124, 124, 124);
+  margin: 1em 10%; //80% width
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+button {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.1em;
+  background-color: #6e6e6e;
+  border: none;
+  color: $bg-color;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0px;
+  letter-spacing: $title-letter-spacing;
+
+  &:hover {
+      background-color: #9c9b9b;
+      cursor: pointer;
+  }
+
+  &:active {
+      background-color: #3d3d3d;
+  }
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $bg-navigation-color;
+  z-index: 10;
+  height: 55px;
+
+  @include breakpoint(tablet) {
+    height: 100px;
+  }
+
+  .nav-hub-logo {
+    width: 40px;
+    height: 40px;
+    padding: 7.5px 0;
+    margin: 0 auto;
+
+    @include breakpoint(tablet) {
+      margin: 0;
+      padding: 15px;
+      height: 70px;
+    }
+
+    img {
+      // width: 100%;
+      height: 100%;
+    }
+  }
+
+  .navigation-links {
+    display: none;
+
+    @include breakpoint(tablet) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 1em;
+      font-family: "Ubuntu Mono", monospace;
+      font-size: 1.2em;
+      letter-spacing: $title-letter-spacing;
+      transition: .35s all ease;
+
+      a {
+          color: $text-color;
+          padding: 0 .5em;
+          &:hover {
+              color: $link-hover-color;
+          }
+      }
+    }
+  }
+}
+
+.header {
+  padding: 20% 10%;
+  .liaisons-logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .keywords {
+    font-family: "Ubuntu Mono", monospace;
+    color: $text-color;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px 0 0 0;
+  }
+}
+
+.mission {
+  color: $bg-color;
+  background-color: rgba(0,0,0,.7);
+  padding: 100px 10%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100px;
+}
+
+.conferences {
+  .upcoming-conference {
+    position: relative;
+
+    .upcoming-conference-teaser {
+        background-image: url("../../img/upcoming_conference_banner.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100px;
+        margin: 0;
+
+        h3 {
+            color: $bg-color;
+            line-height: 100px;
+            vertical-align: middle;
+            font-size: .9em;
+            margin: 0;
+
+            @include breakpoint(tablet) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .upcoming-conference-desc {
+        background-color: #acacac;
+        margin: 0 auto;
+        max-width: 450px;
+
+        p {
+            padding: 1em 2em;
+            font-size: .9em;
+            color: $bg-color;
+            margin: 0 0 10px 0;
+        }
+    }
+  }
+}
+
+#mentorat {
+    // position: relative;
+
+    #helping-hand-img {
+      background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../../img/helping-hand-kids-landscape-crop-bw.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: auto;
+    }
+
+    .img-overlay {
+        color: $bg-color;
+        padding: 1em 2em;
+
+        p {
+          text-align: center;
+        }
+    }
+
+    .mentorat-info-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(tablet) {
+          flex-direction: row;
+        }
+    }
+
+    .mentorat-info {
+        // border: 1px solid black;
+        padding: 1em 2em;
+        flex: 1 1 0px;
+        font-size: 0.9em;
+    }
+
+    .mentorat-line-overlay {
+      display: none;
+
+      @include breakpoint(tablet) {
+        display: block;
+        position: absolute;
+        border: 1.5px solid white;
+        width: 15%;
+        left: 42.5%;
+        top: 55px;
+        mix-blend-mode: difference;
+      }
+    }
+
+
+    #mentors {
+        background-color: rgba(255,255,255,.3);
+        color: $text-color;
+    }
+
+    #mentores {
+        background-color: rgba(0,0,0,.7);
+        color: $bg-color;
+    }
+}
+
+footer {
+  background-color: black;
+  color: $bg-color;
+  padding: 25px;
+
+  .partenaires-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 25px;
+
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 150px;
+    }
+
+    .partenaire {
+      width: 200px;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  p {
+    font-size: .8em;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: .6em;
+  }
+}
+
+@keyframes anim-heartbeat {
+  to {color: $bg-color;}
+}
+
+.heartbeat {
+  color: rgb(207, 98, 98);
+  animation: anim-heartbeat .5s infinite alternate;
+}
